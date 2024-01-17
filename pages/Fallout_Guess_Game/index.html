@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fallout Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+</head>
+
+<body>
+    <div class="game-box">
+        <div>
+            <p>Press any key to start.</p>
+        </div>
+        <div class="button-div">
+            <audio id="theme" src="assets/music/Fallout 4 Theme 8 Bit - Famitracker.mp3"></audio> <!--MUSIC-->
+            <input id="start-game" type="button" value="New Game" onclick="playGame();clearScore();">
+            <input id="music" type="button"  value="Play/Pause Music" onclick="toggleMusic();">  
+        </div>
+        <div class="game-text">
+            <div class="guess-text">
+                <p>Guessed Letters:</p>
+                <p id="output1"> </p>
+                <br>
+                <p id="guess-remaining">Guesses Remaining:</p>
+                <p id="output2"> = = = = = =</p>
+                <p>Player Status:</p>
+                <p id="round-status"> </p>
+            </div>
+            <div class="hangman-text">
+                <p>HANGMAN:</p>
+                <p id="hangmanLetters"> = = = = = =</p>
+                <p>Wins:</p>
+                <p id="wins-count"> 0 </p>
+                <p>Losses:</p>
+                <p id="losses-count"> 0 </p>
+                <p id="pressanykey"></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

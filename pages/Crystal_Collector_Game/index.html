@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Crystal Collector</title>
+    </head>
+    <body>
+        <audio id="audio" src="Clink.wav"></audio>
+        <div class="background">
+            <div class="content">
+                <div>
+                    <h1 class="heading">Crystal Collector</h1>
+                </div>
+                <div class="maincontent">
+                    <div class="textcontain">
+                        <h3 class="bold-text">Bag Size:</h3>
+                        <h3 class="goalnum">-----</h3>
+                        <button class="startgame btn-success">Start Game</button>
+                    </div>
+                    <div class="textcontain">
+                        <h3 class="bold-text">Gems Amount:</h3>
+                        <h3 class="scorenum">-----</h3>
+                        <h5>Game Status:</h5>
+                        <h5 class="gamestat">-----</h5>
+                    </div>
+                    <div class="textcontain center-text">
+                        <h2 class="bold-text">Overall Stash</h2>
+                        <h5>Collected:</h5>
+                        <h5 class="wins">-----</h5>
+                        <h5>Lost:</h5>
+                        <h5 class="losses">-----</h5>
+                    </div>
+                </div>
+                <div class="crystalmain">
+                    <div class="crystalcontainer">
+                        <img src="./images/bluecrystal.jpg" alt="bluecrystal" class="crystalimg blue">
+                        <button class="btn bluecrystal crystalbtn">Blue Crystal</button>
+                    </div> 
+                    <div class="crystalcontainer">
+                        <img src="./images/redcrystal.jpg" alt="redcrystal" class="crystalimg red">
+                        <button class="btn redcrystal crystalbtn">Red Crystal</button>
+                    </div> 
+                    <div class="crystalcontainer">
+                        <img src="./images/yellowcrystal.jpg" alt="yellowcrystal" class="crystalimg yellow">
+                        <button class="btn yellowcrystal crystalbtn">Yellow Crystal</button>
+                    </div> 
+                    <div class="crystalcontainer">
+                        <img src="./images/multicrystal.jpg" alt="multicrystal" class="crystalimg multi">
+                        <button class="btn multicrystal crystalbtn">Multi Crystal</button>
+                    </div> 
+                    <div class="crystalcontainer">
+                        <img src="./images/blackcrystal.jpg" alt="blackcrystal" class="crystalimg black">
+                        <button class="btn blackcrystal crystalbtn">Black Crystal</button>
+                    </div> 
+                    <div class="crystalcontainer">
+                        <img src="./images/whitecrystal.jpg" alt="whitecrystal" class="crystalimg white">
+                        <button class="btn whitecrystal crystalbtn">White Crystal</button>
+                    </div> 
+                </div>
+                <div class="game-explain">
+                    <p class="strong-p">Welcome to the crystal mines of Gileador!</p>
+                    <p>You have been contracted by the king to collect magic gems, each of which change in power whenever you enter the mines... and in some cases, when touched. 
+                       With the enchanted stash-bag you've been given, try to match the Gems Amount to the Bag Size exactly.</p>
+                    <p>Due to the spell on the stash-bag, it will change size each time you enter the mines -- careful not to overfill, or it will rip!</p>
+                    <p>Be wary of black crystals and white crystals -- though they have their own uses, black crystals can quickly fill your stash-bag 
+                        to bursting, and white crystals will shrink others you have collected... but can only be used sparingly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-upper"></div>
+            <div class="footer-lower">
+                <img class="logo-img" src="images/jewel2.png"/>
+            </div>
+        </div>
+
+        <script src="./javascript/game.js"></script>
+    </body>
+</html>

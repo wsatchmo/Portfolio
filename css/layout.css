@@ -1323,7 +1323,7 @@ svg * {
 	position:absolute;
 	text-align: center;
 	z-index:20;
-	top:50px;
+	top:15px;
 	left:50%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -3773,7 +3773,7 @@ keyframes move-twink-back {
 		font-size: 22px;
 	}
 	#portfolio-filter {
-		top:25px;
+		top:-25px;
 		left:0;
 		width:100%;
 		-webkit-transform: translateX(0);
@@ -3989,6 +3989,9 @@ keyframes move-twink-back {
 	.owl-controls.clickable{
 		top: 130px;
 	}
+	.modal-header{
+		font-size: 22px;
+	}
 }
 
 /* For phones */
@@ -4030,5 +4033,8 @@ keyframes move-twink-back {
 	}
 	.owl-controls.clickable{
 		top: 150px;
+	}
+	.modal-header{
+		font-size: 20px;
 	}
 }
